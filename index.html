@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carteira Pet</title>
-</head>
-<body>
-    <header>
-        <h1>Gerando carteira de identificação do seu Pet</h1>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" />
 
-    <main>
-        <form>
-            <fieldset>
-                <legend>Digite as informações do seu PET</legend>
+        <title>Carteira Pet</title>
+    </head>
+    <body class="color-text">
+        <header>
+            <h1>Gerando carteira de identificação do seu Pet</h1>
+        </header>
 
-                <div>
-                    <label for="photo">Coloque a foto do seu pet:</label>
-                    <input id="photo" type="file" required>
+        <main>
+            <form >
+                <fieldset>
+                    <legend>Digite as informações do seu PET</legend>
 
-                    <label for="name">Nome:(*)</label>
-                    <input id="name" type="text" placeholder="Digite o nome do seu PET:" required>
-                </div>
-                <div>
-                    <label for="species">Espécie:</label>
-                    <input id="species" type="text" placeholder="Digite a espécie do seu Pet:">
+                    <div>
+                        <label for="photo">Coloque a foto do seu pet:</label>
+                        <input id="photo" type="file" required>
+
+                        <label for="name">Nome:(*)</label>
+                        <input id="name" type="text" placeholder="Digite o nome do seu PET:" required>
+                    </div>
+                    <div>
+                        <label for="species">Espécie:</label>
+                        <input id="species" type="text" placeholder="Digite a espécie do seu Pet:">
+                        
+                        <label for="race">Raça:</label>
+                        <input id="race" type="text" placeholder="Digite a raça do seu Pet:">
+                                
+                        <label for="birth">Data de nascimento:</label>
+                        <input id="guardian" type="date" required>
+                    </div>
+
+                    <label for="guardian">Pais Humanos:(*)</label>
+                    <input id="guardian" type="text" placeholder="Digite o seu nome:" required>
+
+                    <label for="phone-number">Telefone:</label>
+                    <input id="phone-number" type="tel" placeholder="(XX)9XXXX-XXXX" maxlength="14">
                     
-                    <label for="race">Raça:</label>
-                    <input id="race" type="text" placeholder="Digite a raça do seu Pet:">
-                            
-                    <label for="birth">Data de nascimento:</label>
-                    <input id="guardian" type="date" required>
-                </div>
+                    <label for="additional-information">Informações adicional:</label>
+                    <textarea id="additional-information" cols="20" rows="10" placeholder="Coloque informações adicionais que julgue relevantes aqui:"></textarea>
 
-                <label for="guardian">Pais Humanos:(*)</label>
-                <input id="guardian" type="text" placeholder="Digite o seu nome:" required>
+                    <div>
+                        <button type="reset">Limpar</button>
+                        <button type="submit">Enviar</button>
+                    </div>
+                    
+                    <legend>Atenção: Este não é um documento oficial.</legend>
+                </fieldset>
+            </form>
+        </main>
 
-                <label for="phone-number">Telefone:</label>
-                <input id="phone-number" type="tel" placeholder="(XX)9XXXX-XXXX" maxlength="14">
-                
-                <label for="additional-information">Informações adicional:</label>
-                <textarea id="additional-information" cols="20" rows="10" placeholder="Coloque informações adicionais que julgue relevantes aqui:"></textarea>
-
-                <div>
-                    <button type="reset">Limpar</button>
-                    <button type="submit">Enviar</button>
-                </div>
-                
-                <legend>Atenção: Este não é um documento oficial.</legend>
-            </fieldset>
-        </form>
-    </main>
-
-    <footer>
-        <p>Copyright © - Todos os direitos reservados.</p>
-        <p>MathGo Dev</p>
-    </footer>
-</body>
+        <footer>
+            <p>Copyright © - Todos os direitos reservados.</p>
+            <p>MathGo Dev</p>
+        </footer>
+    </body>
 </html>
